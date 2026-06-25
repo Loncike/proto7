@@ -8,6 +8,7 @@ A simple stack-based bytecode interpreter written in C.
 
 ## Instruction set
 | Op | Effect | Description |
+| - | - | - |
 | Arithmetic: | - | - |
 | Push `n` | -- a      | Push the literal value `n` onto the stack. | 
 | Add | a b -- (b+a)   | Pop the top two values and push their sum. |
