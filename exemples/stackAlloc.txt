@@ -1,0 +1,15 @@
+jmp main
+
+
+main:
+	push 1
+	alloc stack // allocating 1 bytes (that we get from the stack) of memory
+
+	dup
+	push 69
+	write 1 
+
+	dup
+	read 1
+	dump
+	free

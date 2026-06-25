@@ -1,0 +1,11 @@
+jmp main
+
+plus1:
+push 1
+add 
+ret
+
+main:
+push 69
+call plus1
+dump

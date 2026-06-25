@@ -1,0 +1,30 @@
+jmp main
+
+main:
+	push 1	// syscall number
+	push 1  // fd
+
+	alloc 3 
+
+	// "H"
+	dup
+	push 72
+	write 1 
+
+	// "W"
+	dup
+	push 1
+	add
+	push 87
+	write 1
+
+	// "!"
+	dup
+	push 2 
+	add 
+	push 33
+	write 1
+
+	push 3 // size
+
+	syscall 3 // syscall with 3 argument

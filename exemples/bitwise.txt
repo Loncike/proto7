@@ -1,0 +1,8 @@
+//output should be 2
+jmp main
+
+main:
+push 5 
+push 69
+shr
+dump

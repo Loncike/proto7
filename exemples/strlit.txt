@@ -1,0 +1,25 @@
+jmp main
+
+main:
+
+alloc 8 
+dup // ptr
+"HW!" // size
+
+push 1 // nr
+rot 
+rot
+
+push 1 // fd
+rot
+rot
+
+syscall 3
+
+// [ptr, size]
+// [ptr, size, nr]
+// [size, nr, ptr]
+// [nr, ptr, size]
+// [nr, ptr, size, fd]
+// [nr, size, fd, ptr]
+// [nr, fd, ptr, size]

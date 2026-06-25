@@ -1,0 +1,30 @@
+jmp main
+
+	
+
+main:
+	push 1  
+	push 1 
+	push 0 
+loop:
+	dup	
+	push 10
+	lt
+	jt end
+
+	rot
+	rot
+	dup
+	rot
+
+	dup
+	dump
+
+	add
+	rot
+	
+	push 1
+	add
+	jmp loop
+
+end:
